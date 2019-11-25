@@ -1,0 +1,57 @@
+.image{
+    transition: opacity 1
+}
+
+
+h1{
+    color: cornflowerblue;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+}
+
+/*Text for left tweet card*/
+#left_tweet_p{
+    font-size: 24px;
+    color: #F4B41A;
+    padding: 10px;
+}
+
+/*Text for right tweet card*/
+#right_tweet_p{
+    font-size: 24px;
+    color: rgb(86, 165, 255);
+    padding: 10px;
+}
+
+
+
+/*Card class and container class CSS referenced from  W3 Schools: https://www.w3schools.com/howto/howto_css_cards.asp*/
+.card {
+    display: inline-block;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: solid rgb(86, 165, 255) 1px;
+    transition: 0.2s;
+    width: 40%;
+    height: 60vH;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 100px;
+  }
+  
+  /*card psuedo class that adds box shadow on hover*/
+  .card:hover {
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    margin: 2px 16px;
+  }
+
+  .right{
+    right: 0;
+  }
+
+  .left{
+    left: 0;
+  }

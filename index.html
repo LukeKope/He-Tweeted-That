@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <script type="text/javascript" src="./Codebird/codebird.js"></script>
+  <!--Importing codebird library for easy authentication-->
+  <script src="p5.js"></script>
+  <script src="p5.dom.js"></script>
+  <script src="p5.sound.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <h1>America's Least Favorite Game Show</h1>
+
+  <!--card class and container class CSS referenced from W3 Schools: https://www.w3schools.com/howto/howto_css_cards.asp-->
+  <div id="card_container">
+    <div class="card left">
+      <div class="container">
+        <h4><b>Tweet 1</b></h4>
+        <p id="left_tweet_p"></p>
+        <h2 id = "correct_pick"></h2> <!--Update this to display whether the tweet is correct or not-->
+      </div>
+    </div>
+
+    <div class="card right">
+      <div class="container">
+        <h4><b>Tweet 2</b></h4>
+        <p id="right_tweet_p"></p>
+        <h2 id = "incorrect_pick"></h2>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
