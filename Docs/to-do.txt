@@ -5,11 +5,11 @@ At base level, get the functionalty working. From there, clean up aesthetics
 Data
 _________________________________________________________________
 1. Get the data flowing and make sure the tweets display to the two cards ✔
-2. Set T/F to the correct tweets so user can guess
+2. Set T/F to the correct tweets so user can guess ✔
 3. Query from two accounts, display each to the cards ✔
-4. Have tweets show randomly in each card so people can't just click the same box each time
+4. Have tweets show randomly in each card so people can't just click the same box each time ✔
 5. Figure out how to get the .env to work locally without server or maybe run simple server
-6. Need to figure out how to call function to update the results once user selects a tweet
+6. Need to figure out how to call function to update the results once user selects a tweet ✔
 
 
 
@@ -26,18 +26,16 @@ _________________________________________________________________
 
 IDEAS
 __________________________________________________________________
-1. Have round counter: when it's at zero, display the text saying welcome, after every correct guess, display whether they're right or wrong
+1. Have round counter: when it's at zero, display the text saying welcome, after every correct guess, display whether they're right or wrong ✔
     After ten rounds (counter = 10) say OH that's all we have time for today thanks for playing then end
     Reset counter to 0 on setup (refresh page to restart or look into how to trigger the setup on button click)
-2. For the data, make 2 queries in the setup (one to real account one to fake account) and take the array returned, put the text of the tweets in another array 
+2. For the data, make 2 queries in the setup (one to real account one to fake account) and take the array returned, put the text of the tweets in another array ✔
     (see if the API data you get is mutable if so, you could just take the returned array and remove from it whichever tweet is chosen). So we only need 2 initial queries then we can
     just use that data throughout the game and mutate/access the arrays we create in setup. Have the queries and setup happen while the display page loads
 
 3. Going to select random tweets so that they're not the same order each time, therefore we need to remove a tweet from the array if it's picked
 
 4. Have a special bonus round where they're BOTH real trump tweets (then be like oh sorry they're actually both from him)
-
-
 
 
 

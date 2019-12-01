@@ -26,19 +26,19 @@
 
   <!--card class and container class CSS referenced from W3 Schools: https://www.w3schools.com/howto/howto_css_cards.asp-->
   <div id="card_container">
-    <div class="card left">
+    <div class="card left" id = "left_card"> <!--Have ID so we can reference it for the onClick call-->
       <div class="container">
         <h4><b>Tweet 1</b></h4>
         <p id="left_tweet_p"></p>
-        <h2 id = "correct_pick"></h2> <!--Update this to display whether the tweet is correct or not-->
+        <h2 id = "left_pick"></h2> <!--Update this to display whether the tweet is correct or not-->
       </div>
     </div>
 
-    <div class="card right">
+    <div class="card right" id = "right_card"> <!--Have ID so we can reference it for the onClick call-->
       <div class="container">
         <h4><b>Tweet 2</b></h4>
         <p id="right_tweet_p"></p>
-        <h2 id = "incorrect_pick"></h2>
+        <h2 id = "right_pick"></h2>
       </div>
     </div>
   </div>
