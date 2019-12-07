@@ -5,7 +5,7 @@
 //Authentication using the CodeBird library: https://github.com/jublo/codebird-js
 var cb = new Codebird;
 //cb.setConsumerKey(process.env.TWITTER_API_KEY, process.env.TWITTER_API_SECRET_KEY); //using the NPM dotenv package to process these tokens
-cb.setConsumerKey("M2PvMBYiZdivdGNZ9f1UaQyG9", "zxRoYIzrXw8I8Tw2VFUWRADcH8HvDL5CcWD9HqgZaQ0vxzPCqb");
+cb.setConsumerKey("", "");
 
 
 //Global Vars
