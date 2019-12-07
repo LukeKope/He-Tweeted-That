@@ -9,6 +9,43 @@ h1{
     text-align: center;
 }
 
+table{
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+p{
+  font-family: 'Alata', sans-serif;
+}
+
+/*SCOREBOARD STYLING*/
+table, th, tr, td, h4{
+  
+  font-family: 'Alata', sans-serif;
+}
+
+td {
+  border: 1px solid cornflowerblue;
+  font-weight: 100;
+}
+
+img{
+  width: 25%;
+  padding-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#scoreboard{
+  opacity: 0;
+  transition: opacity 6s;
+}
+
+#card_container{
+  transition: opacity 3s;
+}
 /*Text for left tweet card*/
 #left_tweet_p{
     font-size: 24px;
@@ -23,6 +60,7 @@ h1{
     padding: 10px;
 }
 
+/*Have content fade in after rounds are entered*/
 #contentWrapper{
   opacity: 0;
   transition: opacity 3s;

@@ -21,8 +21,10 @@ _________________________________________________________________
 2. Set T/F to the correct tweets so user can guess ✔
 3. Query from two accounts, display each to the cards ✔
 4. Have tweets show randomly in each card so people can't just click the same box each time ✔
-5. #--Figure out how to get the .env to work locally without server or maybe run simple server--#
-6. Need to figure out how to call function to update the results once user selects a tweet ✔
+5. Need to figure out how to call function to update the results once user selects a tweet ✔
+
+6. #--Figure out how to get the .env to work locally without server or maybe run simple server--#
+
 
 Get the correct/incorrect to dissapear after each user answer
 
