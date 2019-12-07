@@ -1,5 +1,18 @@
 TO-DO
 
+PRESENTATION
+- note a specific presentation format requirement
+- if we can't experience the project or we can't explore a question in any meaningful way (like let's see the code but we can't see the code)
+- Present it in the best way for your project (if people need to run locally, etc)
+- Projects due by class time on Monday. Need github repo with the code and any documentation (screenshots, screen recordings)
+- Documentation: if it can be downloaded and run locally and is not super complicated, then maybe documentation is just a couple of screenshots
+- For me, include the libraries that I used, figure out what to do with the API key, etc.
+- Have documentation of the user data flow
+- Include instructions of how to get the API key, i.e. sign up and create your own account to get your own key.
+- Maybe slack him my key b.c. it takes a day to get Twitter API key then just update/refresh the key once he's done grading
+
+
+
 At base level, get the functionalty working. From there, clean up aesthetics 
 
 Data
@@ -8,8 +21,10 @@ _________________________________________________________________
 2. Set T/F to the correct tweets so user can guess ✔
 3. Query from two accounts, display each to the cards ✔
 4. Have tweets show randomly in each card so people can't just click the same box each time ✔
-5. Figure out how to get the .env to work locally without server or maybe run simple server
+5. #--Figure out how to get the .env to work locally without server or maybe run simple server--#
 6. Need to figure out how to call function to update the results once user selects a tweet ✔
+
+Get the correct/incorrect to dissapear after each user answer
 
 
 

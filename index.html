@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>p5.js example</title>
+  <title>He Tweeted That?!</title>
   <style>
     body {
       padding: 0;
@@ -22,27 +22,47 @@
 </head>
 
 <body>
-  <h1>America's Least Favorite Game Show</h1>
+  <div id="contentWrapper">
+    <h1>America's Least Favorite Game Show</h1>
 
-  <!--card class and container class CSS referenced from W3 Schools: https://www.w3schools.com/howto/howto_css_cards.asp-->
-  <div id="card_container">
-    <div class="card left" id = "left_card"> <!--Have ID so we can reference it for the onClick call-->
-      <div class="container">
-        <h4><b>Tweet 1</b></h4>
-        <p id="left_tweet_p"></p>
-        <h2 id = "left_pick"></h2> <!--Update this to display whether the tweet is correct or not-->
+    <!--card class and container class CSS referenced from W3 Schools: https://www.w3schools.com/howto/howto_css_cards.asp-->
+    <div id="card_container">
+      <div class="card left" id="left_card">
+        <!--Have ID so we can reference it for the onClick call-->
+        <div class="container">
+          <h4><b>Tweet 1</b></h4>
+          <p id="left_tweet_p"></p>
+          <h2 id="left_pick"></h2>
+          <!--Update this to display whether the tweet is correct or not-->
+        </div>
       </div>
-    </div>
-
-    <div class="card right" id = "right_card"> <!--Have ID so we can reference it for the onClick call-->
-      <div class="container">
-        <h4><b>Tweet 2</b></h4>
-        <p id="right_tweet_p"></p>
-        <h2 id = "right_pick"></h2>
+      <img id="logoImage" />
+      <div class="card right" id="right_card">
+        <!--Have ID so we can reference it for the onClick call-->
+        <div class="container">
+          <h4><b>Tweet 2</b></h4>
+          <p id="right_tweet_p"></p>
+          <h2 id="right_pick"></h2>
+        </div>
       </div>
+      <h3 id="correct"></h3>
     </div>
   </div>
   </div>
+  <!--Scoreboard-->
+  <div id="scoreboard">
+    <h1 id="numCorrect"></h1>
+    <!--Scoreboard table-->
+    <table id="score_table">
+      <th id="real_tweets_score_header">Real Tweets
+      </th>
+      <th id="fake_tweets_score_header">Fake Tweets
+      </th>
+
+    </table>
+  </div>
+
+
 </body>
 
 </html>

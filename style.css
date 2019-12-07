@@ -23,7 +23,16 @@ h1{
     padding: 10px;
 }
 
+#contentWrapper{
+  opacity: 0;
+  transition: opacity 3s;
+}
 
+#logoImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*Card class and container class CSS referenced from  W3 Schools: https://www.w3schools.com/howto/howto_css_cards.asp*/
 .card {
