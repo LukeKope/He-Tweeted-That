@@ -28,9 +28,11 @@ RIGHT NOW:
 2. Have the buttons there to click on for left and right to choose which you think is correct (change button to disabled when user clicks then re-enable on update tweets)
 3. Have the correct just display below the two buttons in the middle. Have it be green/red
 
+RE-ENABLE THE BUTTONS ✔
 
 
-
+COMPLETED
+_______________________________________________________________________________
 
 At base level, get the functionalty working. From there, clean up aesthetics ✔
 
@@ -45,17 +47,17 @@ _________________________________________________________________
 6. #--Figure out how to get the .env to work locally without server or maybe run simple server--#
 
 
-Get the correct/incorrect to dissapear after each user answer
+Get the correct/incorrect to dissapear after each user answer ✔
 
 
 
 Aesthetics
 _________________________________________________________________
 1. Clean up look, make game show aesthetic more aparent ✔
-2. Add buttons for users to press to identify correct tweet
+2. Add buttons for users to press to identify correct tweet ✔
 3. Add the onload() function to display custom logo, have it animate to the top left? Or just have opacity fade ✔
 4. Animations/indicators for correct or incorrect answers ✔
-6. Maybe have a reveal animation when user clicks answer?
+
 7. Have the two cards look more like tweets ✔
 
 
@@ -68,8 +70,9 @@ __________________________________________________________________
     (see if the API data you get is mutable if so, you could just take the returned array and remove from it whichever tweet is chosen). So we only need 2 initial queries then we can
     just use that data throughout the game and mutate/access the arrays we create in setup. Have the queries and setup happen while the display page loads
 
-4. Have a special bonus round where they're BOTH real trump tweets (then be like oh sorry they're actually both from him) 
+4. Have a special bonus round where they're BOTH real trump tweets (then be like oh sorry they're actually both from him)  ✔
 
+_________________________________________________________________________________________________________________________________________________________________________________________________
 
 
 LIBRARIES USED

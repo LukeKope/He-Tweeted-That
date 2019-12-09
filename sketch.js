@@ -12,8 +12,8 @@ cb.setConsumerKey(
 //Global Vars
 var leftElementIsClicked = false; //var that tracks the state of the leftCard
 var rightElementIsClicked = false; //var that tracks the state of the rightCard
-let leftText = "Correct!"; //set initial text to the left card
-let rightText = "Incorrect!"; //set initial text to the right card
+let leftText = "Let's jump into the game!"; //set initial text to the left card when user first enters the game
+let rightText = "Let's jump into the game!"; //set initial text to the right card
 let roundNumber; //keep track of which round we're on
 let total_rounds;
 let real_acct_array = []; //array to store real tweets in
@@ -31,8 +31,10 @@ let bonusTweets = [
   "Huma Abedin, the top aide to Hillary Clinton and the wife of perv sleazebag Anthony Wiener, was a major security risk as a collector of info"
 ]; //bonus round tweets
 
-/*SEARCH PARAMETERS 
-________________________________________________________________________________________________________________*/
+
+
+/*-------------------------SETTING SEARCH PARAMETERS FOR TWEETS---------------------------------
+_______________________________________________________________________________________________________________________*/
 var real_acct_search_parameters = {
   //Specify search params for querying real Trump account
   screen_name: "@realDonaldTrump", //key word to search with,
@@ -50,7 +52,11 @@ var fake_acct_search_parameters = {
   include_rts: "false", //exclude retweets from returned results
   count: 5 //specify how many results you want to return
 };
-//_______________________________________________________________________________________________________________________
+//_____________________________________________________________________________________________________________________
+
+
+/*-------------------------QUERYING THE TWEETS AND SETTING ROUND NUMBERS FOR THE GAME---------------------------------
+_______________________________________________________________________________________________________________________*/
 
 function preload() {
   queryRealTweets();
@@ -59,7 +65,7 @@ function preload() {
     "How many rounds would you like to play? You can play up to 20!"
   ); //get user input as to how many rounds they'd like to play (can play up to 20 rounds, query only makes max 20 queries)
   //have image dissapear after five seconds
-  randomBonusRound = int(random(2, total_rounds));
+  randomBonusRound = int(random(3, total_rounds));
   console.log("rand bonus round:", randomBonusRound);
   document.getElementById("contentWrapper").style.opacity = 1;
 }
@@ -85,7 +91,7 @@ function queryRealTweets() {
     //Method from Codebird that makes API query to real tweets
     "statuses/userTimeline", //specifying what kind of query we want to make
     real_acct_search_parameters, //specifying the parameters we set above
-    function(reply) {
+    function (reply) {
       //what to do with the reply/the data
       console.log(reply);
       for (i = 0; i < reply.length; i++) {
@@ -100,7 +106,7 @@ function queryFakeTweets() {
     //Method from Codebird that makes API query to fake tweets
     "statuses/userTimeline", //specifying what kind of query we want to make
     fake_acct_search_parameters, //specifying the parameters we set above
-    function(reply) {
+    function (reply) {
       //what to do with the reply/the data
       console.log(reply);
       for (i = 0; i < reply.length; i++) {
@@ -109,6 +115,13 @@ function queryFakeTweets() {
     }
   );
 }
+//_______________________________________________________________________________________________________________________
+
+
+
+/*-----------FUNCTIONS THAT ALLOW GAME FUNCTIONALITY (CHECK VICTORY CONDITION, UPDATE TWEETS, BONUS ROUND)--------------
+_______________________________________________________________________________________________________________________*/
+
 
 //Need to allow this function to be able to say which element is correct RANDOMLY, not just left and right card
 //Idea: rather than just having the innerHTML change to "correct" or "incorrect", have it update to a global var that we can set then update in the updateTweets!
@@ -127,6 +140,9 @@ function checkVictoryCondition() {
     //on click, execute this code below
     leftElementIsClicked = true; //update the element to be true
     document.getElementById("correct").innerHTML = leftText; //update text within correct card
+    //disable the buttons once the victory condition is met
+    document.getElementById("left_button").disabled = true;
+    document.getElementById("right_button").disabled = true;
   }); //link the function that listens for click to the left_card
 
   /*RIGHT CARD*/
@@ -134,6 +150,9 @@ function checkVictoryCondition() {
     //this function updates the state onClick
     rightElementIsClicked = true; //update the element to be true
     document.getElementById("correct").innerHTML = rightText; //update text within correct card
+    //disable the buttons once the victory condition is met
+    document.getElementById("left_button").disabled = true;
+    document.getElementById("right_button").disabled = true;
   }
 
   var right_card = document.getElementById("right_button"); // set var to be the element you want to listen for click on
@@ -163,9 +182,14 @@ function updateTweets() {
     }
 
     roundNumber += 1;
-    document.getElementById("right_pick").innerHTML = "";
-    document.getElementById("left_pick").innerHTML = ""; //update the correct/incorrect
+
+    //re-enable the buttons
+    document.getElementById("left_button").disabled = false;
+    document.getElementById("right_button").disabled = false;
+
+    document.getElementById("correct").innerHTML = ""; //update the correct/incorrect
   }
+
   leftElementIsClicked = false;
   rightElementIsClicked = false; //reset states to be not clicked
 }
@@ -185,16 +209,26 @@ function bonusRound() {
   }
 
   roundNumber += 1;
-  document.getElementById("correct").innerHTML = "";
+
+  //re-enable the buttons
+  document.getElementById("left_button").disabled = false;
+  document.getElementById("right_button").disabled = false;
+
   document.getElementById("correct").innerHTML = ""; //update the correct/incorrect
 
   leftElementIsClicked = false;
   rightElementIsClicked = false; //reset states to be not clicked
 }
+//_____________________________________________________________________________________________________________________
+
+
+/*-------------------------DRAW LOOP WHERE ALL OF THE GAME FUNCTIONALITY FUNCTIONS ARE CALLED--------------------------
+---------------------------ALSO WHERE WE GENERATE THE TABLE UPON ENDING THE GAME---------------------------------------
+_______________________________________________________________________________________________________________________*/
 
 function draw() {
   roundsCounter = total_rounds ? total_rounds : 5;
-  if (roundNumber <= roundsCounter) {
+  if (roundNumber < roundsCounter + 1) {
     //while we're still in the game, the rounds haven't finished (setting default number to 5 if user doesn't enter a value using the ternary)
     if (leftElementIsClicked == false && rightElementIsClicked == false) {
       checkVictoryCondition();
@@ -207,7 +241,7 @@ function draw() {
       }
     }
   } else {
-    console.log("GAME OVER", total_rounds);
+    console.log("GAME OVER");
 
     //Make cards dissapear by changing the opacity of the element
     document.getElementById("card_container").style.opacity = "0";
@@ -244,7 +278,6 @@ function draw() {
         "fake_tweet_data" + i
       ).innerHTML = fake_acct_array[i] ? fake_acct_array[i] : ""; //set the string to be added to the inner HTML of the newly created td tag, or set the value to empty string if tweet doesn't exist
     }
-    console.log(document.getElementById("score_table"));
     document.getElementById("scoreboard").style.opacity = "1";
     noLoop();
   }
