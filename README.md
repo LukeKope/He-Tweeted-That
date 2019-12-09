@@ -1,17 +1,18 @@
 # Creative-Coding-Final-Project
 
 
-*LIBRARIES USED*
+# LIBRARIES USED
 _________________________________________________________________
 Codebird: https://github.com/jublo/codebird-js
     - Used to make querying to Twitter simpler. It handles a lot of the complex authentication and allows you to make calls to Twitter specifying queries
 
 
 *See the documentation folder for screenshots of the program at various stages as well as a video file that depicts me using the program. Please note that the video is .webm which is compatible with VLC*
+Within each documentation folder, there is a more detailed read me describing the contents of each.
 _________________________________________________________________
-Within each documentation folder, there is a more detailed read me describing the contents of each. 
+ 
 
-*GENERAL NOTES*
+# GENERAL NOTES
 _________________________________________________________________
 1. Codebird documentation isn't great, BUT what you basically need to do is look at the js file. This has all of the GET and POST requests you can make (which match the Twitter docs)
 2. In order to make the get request that you want/need, you need to check the twitter docs to see the parameters you need and the name of the GET request. 
@@ -20,7 +21,7 @@ _________________________________________________________________
 3. Note that for the names of the GET requests, if there's an underline in there (like user_timeline), you need to use camelCase (userTimeline)
 
 
-*Instructions on running the code*
+# Instructions on running the code
 _________________________________________________________________
 You will need to download the codebird library locally from here: https://github.com/jublo/codebird-js
 You will need a Twitter API key. The process for getting one is a bit extensive. 
