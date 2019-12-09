@@ -8,7 +8,7 @@ Codebird: https://github.com/jublo/codebird-js
 
 
 *See the documentation folder for screenshots of the program at various stages as well as a video file that depicts me using the program. Please note that the video is .webm which is compatible with VLC*
-Within each documentation folder, there is a more detailed read me describing the contents of each.
+- Within each documentation folder, there is a more detailed read me describing the contents of each.
 _________________________________________________________________
  
 
