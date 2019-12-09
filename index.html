@@ -22,47 +22,67 @@
 </head>
 
 <body>
-  <div><img src="Assets/trump-twitter-icon.png" alt="Twitters icon with Trump's hair"></div>
+  <div><img src="Assets/trump-twitter-icon.png" id="logoImage" alt="Twitters icon with Trump's hair"></div>
   <div id="contentWrapper">
     <h1>America's Least Favorite Game Show</h1>
+    
+  <!--Scoreboard-->
+  <div id="scoreboard">
+      <h1 id="numCorrect"></h1>
+      <!--Scoreboard table-->
+      <table id="score_table">
+        <th id="real_tweets_score_header">Real Tweets
+        </th>
+        <th id="fake_tweets_score_header">Fake Tweets
+        </th>
+      </table>
+    </div>  
 
     <!--card class and container class CSS referenced from W3 Schools: https://www.w3schools.com/howto/howto_css_cards.asp-->
     <div id="card_container">
       <div class="card left" id="left_card">
         <!--Have ID so we can reference it for the onClick call-->
         <div class="container">
-          <h4><b>Tweet 1</b></h4>
+          <div class="tweet_head">
+            <!--Header for tweet. Has profile image, twitter handle and the @-->
+            <img src="./Assets/trump_face_icon.jpg" class="tweet_head_image" alt="" />
+            <h3 class="twitter_handle">Donald J. Trump</h3>
+            <div class="twitter_at_div">
+              <p class="twitter_at">@realDonaldTrump</p>
+            </div>
+          </div>
+          <!--End tweet head styling-->
           <p id="left_tweet_p"></p>
           <h2 id="left_pick"></h2>
           <!--Update this to display whether the tweet is correct or not-->
         </div>
+        <button class="button" id = "left_button">LEFT BUTTON</button>
       </div>
+
       <div class="card right" id="right_card">
         <!--Have ID so we can reference it for the onClick call-->
         <div class="container">
-          <h4><b>Tweet 2</b></h4>
+          <div class="tweet_head">
+            <!--Header for tweet. Has profile image, twitter handle and the @-->
+            <img src="./Assets/trump_face_icon.jpg" class="tweet_head_image" alt="" />
+            <h3 class="twitter_handle">Donald J. Trump</h3>
+            <div class="twitter_at_div">
+              <p class="twitter_at">@realDonaldTrump</p>
+            </div>
+          </div>
           <p id="right_tweet_p"></p>
           <h2 id="right_pick"></h2>
+          <!--Update this to display whether the tweet is correct or not-->
         </div>
+        <button class = "button" id = "right_button">RIGHT BUTTON</button>
       </div>
-      <h3 id="correct"></h3>
+
+      <h1 id="correct"></h1>
     </div>
   </div>
-  </div> 
+  </div>
   <!--End card container-->
 
-
-  <!--Scoreboard-->
-  <div id="scoreboard">
-    <h1 id="numCorrect"></h1>
-    <!--Scoreboard table-->
-    <table id="score_table">
-      <th id="real_tweets_score_header">Real Tweets
-      </th>
-      <th id="fake_tweets_score_header">Fake Tweets
-      </th>
-    </table>
-  </div>
 
 
 </body>

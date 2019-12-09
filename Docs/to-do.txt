@@ -1,7 +1,7 @@
 TO-DO
 
 PRESENTATION
-- note a specific presentation format requirement
+- not a specific presentation format requirement
 - if we can't experience the project or we can't explore a question in any meaningful way (like let's see the code but we can't see the code)
 - Present it in the best way for your project (if people need to run locally, etc)
 - Projects due by class time on Monday. Need github repo with the code and any documentation (screenshots, screen recordings)
@@ -12,8 +12,27 @@ PRESENTATION
 - Maybe slack him my key b.c. it takes a day to get Twitter API key then just update/refresh the key once he's done grading
 
 
+TO-DO AS OF 12/7/19
+_________________________________________________________________
+1. Get correct/incorrect to display correctly ✔
+2. Style scoreboard table ✔
+3. Get bonus round to work, show special text/visual for bonus round
+4. Have more gameshow type text
+5. ~ * A E S T H E T I C S* ~
+6. Make it so that once people click on the card, they can't click again?
+7. Make buttons for user to click rather than clicking on the card (just change the id's in the check victory condition)
+    Set the attribute if the button to be disabled once the user clicks one of them!
 
-At base level, get the functionalty working. From there, clean up aesthetics 
+RIGHT NOW:
+1. Style cards to make them look like tweets (add profile pic, the @ under the name, etc. make the cards look identical) ✔
+2. Have the buttons there to click on for left and right to choose which you think is correct (change button to disabled when user clicks then re-enable on update tweets)
+3. Have the correct just display below the two buttons in the middle. Have it be green/red
+
+
+
+
+
+At base level, get the functionalty working. From there, clean up aesthetics ✔
 
 Data
 _________________________________________________________________
@@ -32,13 +51,12 @@ Get the correct/incorrect to dissapear after each user answer
 
 Aesthetics
 _________________________________________________________________
-1. Clean up look, make game show aesthetic more aparent
+1. Clean up look, make game show aesthetic more aparent ✔
 2. Add buttons for users to press to identify correct tweet
-3. Add the onload() function to display custom logo, have it animate to the top left? Or just have opacity fade
-4. Animations/indicators for correct or incorrect answers
-5. Make more assets in illustrator
+3. Add the onload() function to display custom logo, have it animate to the top left? Or just have opacity fade ✔
+4. Animations/indicators for correct or incorrect answers ✔
 6. Maybe have a reveal animation when user clicks answer?
-7. Have the two cards look more like tweets
+7. Have the two cards look more like tweets ✔
 
 
 IDEAS
@@ -50,9 +68,7 @@ __________________________________________________________________
     (see if the API data you get is mutable if so, you could just take the returned array and remove from it whichever tweet is chosen). So we only need 2 initial queries then we can
     just use that data throughout the game and mutate/access the arrays we create in setup. Have the queries and setup happen while the display page loads
 
-3. Going to select random tweets so that they're not the same order each time, therefore we need to remove a tweet from the array if it's picked
-
-4. Have a special bonus round where they're BOTH real trump tweets (then be like oh sorry they're actually both from him)
+4. Have a special bonus round where they're BOTH real trump tweets (then be like oh sorry they're actually both from him) 
 
 
 

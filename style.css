@@ -2,7 +2,7 @@
     transition: opacity 1
 }
 
-
+/*General attributes/elements styling*/
 h1{
     color: cornflowerblue;
     font-family: 'Alata', sans-serif;
@@ -30,7 +30,46 @@ td {
   font-weight: 100;
 }
 
-img{
+
+
+/*Styling the tweet header*/
+.tweet_head{ /*DIV containing the profile pic, handle, and @*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 7%;
+}
+
+.tweet_head_image{ /*tweet profile pic*/
+  max-width: 10%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.twitter_handle{/*twitter handle styling*/
+  font-family: 'Alata', sans-serif;
+  display: flex;    
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.twitter_at_div{
+  display: block;
+  margin-left: 1%;
+  padding-top: 5px;
+}
+
+.twitter_at{/*twitter @*/
+  color: darkgrey;
+  opacity: .8;
+  margin-top: -2px;
+}
+
+
+#logoImage{
   width: 25%;
   padding-top: 50px;
   display: block;
@@ -48,15 +87,15 @@ img{
 }
 /*Text for left tweet card*/
 #left_tweet_p{
-    font-size: 24px;
-    color: #F4B41A;
+    font-size: 36px;
+    /*color: #F4B41A;*/
     padding: 10px;
 }
 
 /*Text for right tweet card*/
 #right_tweet_p{
-    font-size: 24px;
-    color: rgb(86, 165, 255);
+    font-size: 36px;
+    /*color: rgb(86, 165, 255);*/
     padding: 10px;
 }
 
@@ -70,6 +109,12 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#correct{
+  text-align: center;
+  padding-top: 75vH;
+  font-family: 'Alata', sans-serif;
 }
 
 /*Card class and container class CSS referenced from  W3 Schools: https://www.w3schools.com/howto/howto_css_cards.asp*/
@@ -92,7 +137,7 @@ img{
   }
   
   .container {
-    margin: 2px 16px;
+    margin: 2px 100px;
   }
 
   .right{
