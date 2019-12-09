@@ -1,5 +1,5 @@
 # Screen Captures
-
+*Please note that some of the images get cut off when you preview them here so you will have to scroll to the right to see the full image or download the images*
 These screen captures display the following: 
 
 - The score table which is dynamically displayed at the end, meaning that the table will change in size depending on how many rounds the user decides to play
