@@ -9,7 +9,7 @@ Codebird: https://github.com/jublo/codebird-js
 NPM dotenv package (node project manager): https://github.com/motdotla/dotenv
     - imported the dotenv functionality that lets you read environmental variables so I can hide my API keys
 
-
+*See the documentation folder for screenshots of the program at various stages as well as a video file that depicts me using the program. Please note that the video is .webm which is compatible with VLC*
 
 *GENERAL NOTES*
 _________________________________________________________________

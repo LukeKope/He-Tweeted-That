@@ -15,9 +15,6 @@ PRESENTATION
 TO-DO AS OF 12/7/19
 _________________________________________________________________
 
-1. Fix the queries so you always have enough 
-2. Finalize documentation and push to github!
-3. Have dummy data as backup in case the data isn't coming through
 
 
 
@@ -34,6 +31,10 @@ _______________________________________________________________________________
 
 At base level, get the functionalty working. From there, clean up aesthetics ✔
 
+
+1. Fix the queries so you always have enough  ✔
+2. Finalize documentation and push to github! ✔
+3. Have dummy data as backup in case the data isn't coming through ✔
 
 1. Style cards to make them look like tweets (add profile pic, the @ under the name, etc. make the cards look identical) ✔
 2. Have the buttons there to click on for left and right to choose which you think is correct (change button to disabled when user clicks then re-enable on update tweets) ✔
