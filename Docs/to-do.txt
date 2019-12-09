@@ -14,27 +14,45 @@ PRESENTATION
 
 TO-DO AS OF 12/7/19
 _________________________________________________________________
-1. Get correct/incorrect to display correctly ✔
-2. Style scoreboard table ✔
-3. Get bonus round to work, show special text/visual for bonus round
-4. Have more gameshow type text
-5. ~ * A E S T H E T I C S* ~
-6. Make it so that once people click on the card, they can't click again?
-7. Make buttons for user to click rather than clicking on the card (just change the id's in the check victory condition)
-    Set the attribute if the button to be disabled once the user clicks one of them!
+
+1. Fix the queries so you always have enough 
+2. Finalize documentation and push to github!
+3. Have dummy data as backup in case the data isn't coming through
+
+
 
 RIGHT NOW:
-1. Style cards to make them look like tweets (add profile pic, the @ under the name, etc. make the cards look identical) ✔
-2. Have the buttons there to click on for left and right to choose which you think is correct (change button to disabled when user clicks then re-enable on update tweets)
-3. Have the correct just display below the two buttons in the middle. Have it be green/red
 
-RE-ENABLE THE BUTTONS ✔
+
+6. #--Figure out how to get the .env to work locally without server or maybe run simple server--#
+
+
 
 
 COMPLETED
 _______________________________________________________________________________
 
 At base level, get the functionalty working. From there, clean up aesthetics ✔
+
+
+1. Style cards to make them look like tweets (add profile pic, the @ under the name, etc. make the cards look identical) ✔
+2. Have the buttons there to click on for left and right to choose which you think is correct (change button to disabled when user clicks then re-enable on update tweets) ✔
+3. Have the correct just display below the two buttons in the middle. ✔
+
+
+2. Fix the round counter so we don't fade on the last round (have elif === totalRounds) ✔
+3. Get bonus round to work, show special text/visual for bonus round ✔
+4. Have more gameshow type text ✔
+5. ~ * A E S T H E T I C S* ~  ✔
+6. Style the buttons ✔
+
+RE-ENABLE THE BUTTONS ✔
+
+1. Get correct/incorrect to display correctly ✔
+2. Style scoreboard table ✔
+6. Make it so that once people click on the card, they can't click again ✔
+7. Make buttons for user to click rather than clicking on the card (just change the id's in the check victory condition) ✔
+    Set the attribute if the button to be disabled once the user clicks one of them! ✔
 
 Data
 _________________________________________________________________
@@ -44,7 +62,7 @@ _________________________________________________________________
 4. Have tweets show randomly in each card so people can't just click the same box each time ✔
 5. Need to figure out how to call function to update the results once user selects a tweet ✔
 
-6. #--Figure out how to get the .env to work locally without server or maybe run simple server--#
+
 
 
 Get the correct/incorrect to dissapear after each user answer ✔

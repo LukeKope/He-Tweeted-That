@@ -32,7 +32,7 @@ td {
 
 
 
-/*Styling the tweet header*/
+/*STYLING THE TWEET HEADER*/
 .tweet_head{ /*DIV containing the profile pic, handle, and @*/
   display: flex;
   flex-wrap: wrap;
@@ -67,8 +67,10 @@ td {
   opacity: .8;
   margin-top: -2px;
 }
+/*END TWEET HEADER STYLING*/
 
 
+/*STYLING ID'S*/
 #logoImage{
   width: 25%;
   padding-top: 50px;
@@ -102,7 +104,7 @@ td {
 /*Have content fade in after rounds are entered*/
 #contentWrapper{
   opacity: 0;
-  transition: opacity 3s;
+  transition: opacity 10s;
 }
 
 #logoImage{
@@ -115,6 +117,25 @@ td {
   text-align: center;
   padding-top: 75vH;
   font-family: 'Alata', sans-serif;
+}
+
+.button{
+  background-color: cornflowerblue;
+  border-radius: 70px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Alata', sans-serif;
+  cursor: pointer;
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 38%;
+  box-sizing: border-box;
 }
 
 /*Card class and container class CSS referenced from  W3 Schools: https://www.w3schools.com/howto/howto_css_cards.asp*/
